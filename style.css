@@ -72,6 +72,8 @@ body {
 }
 
 .social-network {
+    display: block;
+    text-decoration: none;
     background-color: #373737;
     color: var(--socials-gray);
     border-radius: 0.4rem;
