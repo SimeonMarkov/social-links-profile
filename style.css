@@ -1,0 +1,115 @@
+:root {
+    --lime-color: rgb(200, 255, 0);
+    --less-black: #252525;
+    --socials-gray: #d8d5d5;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main-container {
+    background-color: var(--less-black);
+    width: 60vw;
+    height: auto;
+    margin: 5rem auto;
+    border-radius: 1rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto 2rem;
+}
+
+.profile-picture {
+    display: block;
+    border-radius: 50%;
+    width: 33%;
+    height: 33%;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+.profile-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.name {
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+}
+
+.location {
+    color: var(--lime-color);
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+}
+
+.moto {
+    color: lightgrey;
+    padding: 1.5rem;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    height: fit-content;
+    margin: 1.4rem auto;
+}
+
+.social-network {
+    background-color: #373737;
+    color: var(--socials-gray);
+    border-radius: 0.4rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    font-family: Inter-Bold, sans-serif;
+    font-size: 0.9rem;
+    overflow: clip;
+}
+
+.social-network:hover {
+    background-color: var(--lime-color);
+    color: black;
+    cursor: url("assets/pointers/9_black.png") 0 0, auto;
+}
+
+.social-network:last-child {
+    margin-bottom: 1rem;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+
+@media only screen and (min-width: 1440px){
+    .main-container {
+        width: 30vw;
+    }
+
+    .profile-picture {
+        width: 20%;
+        height: 20%;
+    }
+}
