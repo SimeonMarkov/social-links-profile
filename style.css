@@ -1,6 +1,6 @@
 :root {
     --lime-color: rgb(200, 255, 0);
-    --less-black: #252525;
+    --less-black: #131313;
     --socials-gray: #d8d5d5;
 }
 
@@ -15,9 +15,9 @@ body {
 
 .main-container {
     background-color: var(--less-black);
-    width: 60vw;
+    max-width: 20vw;
     height: auto;
-    margin: 20vh auto;
+    margin: 18vh auto;
     border-radius: 1rem;
 }
 
